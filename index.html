@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="prism.css"/>
+  <title>Python Lessons</title>
+</head>
+<body>
+  <header id="header">
+    <h1><strong>Topic 1</strong></h1>
+    <h2>Print</h2>
+  </header>
+  <div id="about-container">
+    <div class="about-text">
+      <h2>Print:</h2>
+      <p>Python use <strong>print()</strong> to print message.It tell the computer to display message in the output</p>
+    </div>
+    <div class="code">
+      <h3>Example Code:</h3>
+      <pre><code class="language-python">print("Hello World")</code></pre>
+      <br>
+    </div>
+    <div class="output">
+      <h3>Output:</h3>
+      <pre class="outblock"><code>Hello World
+
+[Program Finished]
+</code></pre>
+    </div>
+    <div class="about-text">
+      <p>We successfully print the message Hello World to the output.Notice there's no qoutes <strong>" "</strong>, because <strong>python</strong> tells the computer to ignore the qoutes <strong>" "</strong> because qoutes is just to know what data type the <strong>print()</strong> tries to display which in this is string.There are three types of data and we'll explore it in topic 2</p>
+      <br>
+      <p>Now let's print Variable.To print variable we don't need to use qoutes <strong>" "</strong>.We just need to type the vriable name.</p>
+    </div>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">city = "Mandalay"
+print(city)</code></pre>
+    <br>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>Mandalay
+[Program Finished]</code></pre>
+    <div class="about-text">
+      <p> but be careful, because if you mistype or use wrong letters even if it is only one leter <strong>Python</strong> Won't regocnize the variable</p>
+    </div>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">city = "Mandalay"
+print("city")</code></pre>
+    <br>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>city
+
+[Program Finished]</code></pre>
+    <br>
+    <h2>Or:</h2>
+    <br>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">city = "Mandalay"
+print(City)</code></pre>
+    <br>
+    <h3>Output:</h3>
+    <pre class="outblock error"><code>NameError: name 'City' is not defined.
+Did you mean: 'city'?
+
+[Program Finished]</code></pre>
+    <div class="about-text">
+      <p>We can also combine variable and strings, same with numbers</p>
+    </div>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">name = "Emu"
+print("Hello, I'm", name)
+#Or
+print("Hello, I'm" + name)</code></pre>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>Hello, I'm Emu
+Hello, I'm Emu
+
+[Program Finished]</code></pre>
+    <div class="about-text">
+      <p>If we want advance one, we can use <strong>f""</strong>, which don't don't need <strong>coma</strong> or <strong>plus</strong>.To combine both string and variable we can use {(Variable name)} and we need to write inside the qoutes <strong>" "</strong></p>
+    </div>
+        <h3>Example Code:</h3>
+    <pre><code class="language-python">name = "Emu"
+print(f"Hi, I'm {(name)}")</code></pre>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>Hello, I'm Emu
+
+[Program Finished]</code></pre>
+  </div>
+  <footer>Dream Organization Team © 2026</footer>
+  <div class="panel">
+      <p class="counter">1</p>
+      <p class="counter">2</p>
+      <p class="counter">3</p>
+      <p class="counter">4</p>
+      <p class="counter">5</p>
+  </div>
+</body>
+<script src="prism.js"></script>
+<script src="prism-python.min.js"></script>
+<script src="app.js"></script>
+</html>

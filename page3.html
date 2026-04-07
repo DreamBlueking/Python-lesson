@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="prism.css"/>
+  <title>Python Lessons</title>
+</head>
+<body>
+  <header id="header">
+    <h1><strong>Topic 3</strong></h1>
+    <h2>Input</h2>
+  </header>
+  <div id="about-container">
+    <div class="about-text">
+      <h2>Input:</h2>
+      ‎<p>In <strong>Python</strong>, we use <strong>input()</strong> keyword to ask the user the value.It tells the Computet to ask the user for the value of the <strong>input()</strong>.We can type anything inside the input brasket as a question as long as you use qoutes "" it will work</p>
+    </div>
+    <div class="code">
+      <h3>Example Code:</h3>
+      <pre><code class="language-python">input("Enter your username:")</code></pre>
+      <br>
+    </div>
+    <div class="output">
+      <h3>Output:</h3>
+      <pre class="outblock"><code>Enter your name: 
+#you'll type you're user here
+ 
+[Program Finished]</code></pre>
+    </div>
+    <div class="about-text">
+      <p>But without storing the value to the variable, we can't use the input value.So let's store the value to <strong>user</strong> variable</p>
+    </div>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">user = input("Enter your user:")
+print(f"Hello! {(user)}")</code></pre>
+    <br>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>Enter your user:Emu
+
+#let's say you type Emu
+
+Hello! Emu
+[Program Finished]</code></pre>
+    <div class="about-text">
+      <p>Now we can reuse the variable again and again, but <strong>input()</strong> save the value as a string so we can't really use it as integer or float data types.But we can use <strong>int(input(""))</strong> to store it as integer type and <strong>float(input(""))</strong> to store it as float type</p>
+    </div>
+    <h3>Example Code:</h3>
+    <pre><code class="language-python">age = int(input("age:"))
+height = float(input("height:"))
+print(age)
+print(height)</code></pre>
+    <br>
+    <h3>Output:</h3>
+    <pre class="outblock"><code>age:14
+height:1.74
+
+#let's type something
+
+14
+1.74
+[Program Finished]</code></pre>
+    <div class="about-text">
+      <p>Now, you might say what are tge usage of each data types? Why can't we just use string as numbers and boolean? We'll find out in <strong>topic 3</strong></p>
+    </div>
+  </div>
+  <footer>Dream Organization Team © 2026</footer>
+  <div class="panel">
+      <p class="counter">1</p>
+      <p class="counter">2</p>
+      <p class="counter">3</p>
+      <p class="counter">4</p>
+      <p class="counter">5</p>
+  </div>
+</body>
+<script src="prism.js"></script>
+<script src="prism-python.min.js"></script>
+<script src="app.js"></script>
+</html>
